@@ -77,5 +77,6 @@
     <string name="homepage_camara">Camara</string>
     <string name="homepage_video">Video</string>
     <string name="homepage_gallery">Gallery</string>
+    <string name="homepage_login">Login</string>
 
 </resources>

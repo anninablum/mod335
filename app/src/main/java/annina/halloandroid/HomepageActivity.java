@@ -8,7 +8,15 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 
+import annina.halloandroid.ui.login.LoginActivity;
+
 public class HomepageActivity extends AppCompatActivity {
+
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        setContentView(R.layout.app_bar_main);
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +40,19 @@ public class HomepageActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), ExampleActivity.class);
             startActivity(intent);
         });
+
+        Button btn_login = findViewById(R.id.btn_HomepageLogin);
+        btn_login.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
+        });
+
+//        Button nav = findViewById(R.id.btn_nav);
+//        btn_login.setOnClickListener(v -> {
+//            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+//            startActivity(intent);
+//        });
+
 
 
     }
