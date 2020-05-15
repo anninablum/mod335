@@ -30,7 +30,7 @@ public class HomepageActivity extends AppCompatActivity {
 
         Button btn_gallery = findViewById(R.id.btn_HomepageGallery);
         btn_gallery.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), GalleryActivity.class);
+            Intent intent = new Intent(getApplicationContext(), ExampleGalleryActivity.class);
             startActivity(intent);
         });
 

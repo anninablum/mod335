@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class GalleryActivity extends AppCompatActivity {
+public class ExampleGalleryActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -16,7 +16,7 @@ public class GalleryActivity extends AppCompatActivity {
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery);
+        setContentView(R.layout.example_gallery);
 
         ArrayList<ExampleItem> exampleList = new ArrayList<>();
         exampleList.add(new ExampleItem(R.drawable.ic_android, "Line1", "Line2"));
