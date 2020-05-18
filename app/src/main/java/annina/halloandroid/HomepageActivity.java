@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.widget.Button;
+
 import annina.halloandroid.ui.login.LoginActivity;
 
 public class HomepageActivity extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class HomepageActivity extends AppCompatActivity {
 
         Button btn_camera = findViewById(R.id.btn_HomepageCamara);
         btn_camera.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             startActivity(intent);
         });
 
@@ -30,7 +31,7 @@ public class HomepageActivity extends AppCompatActivity {
 
         Button btn_gallery = findViewById(R.id.btn_HomepageGallery);
         btn_gallery.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), ExampleGalleryActivity.class);
+            Intent intent = new Intent(getApplicationContext(), LocationActivitiy.class);
             startActivity(intent);
         });
 
