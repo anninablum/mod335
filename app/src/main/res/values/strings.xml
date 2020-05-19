@@ -17,9 +17,34 @@
 
     <!-- Beschriftungen für Schaltflächen -->
     <string name="weiter">Weiter</string>
-    <string name="fertig">Fertig</string>
 
-    <!-- Hinweis für Eingabefeld-->
+    <!-- Hinweis für Eingabefeld Login-->
     <string name="vorname_nachname">Vorname Nachname</string>
+    <string name="title_activity_login">Log in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_username">Username</string>
+    <string name="action_sign_in">Continue</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- Homepage -->
+    <string name="homepage_title">Location Camera and Gallery</string>
+    <string name="homepage_camara">Picture</string>
+    <string name="homepage_video">Video</string>
+    <string name="homepage_gallery">Gallery</string>
+    <string name="homepage_login">Login</string>
+    <string name="line_1">Titel</string>
+    <string name="line_2">Location</string>
+    <string name="line_3">Time</string>
+    <string name="todo">TODO</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="description">Dieses Bild wurde mit XY aufgenommen.</string>
+    <string name="bnt_capture_picture">Take a Picture</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
