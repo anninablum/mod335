@@ -77,24 +77,7 @@ public class LocationActivitiy extends Activity {
         if (locationManager == null) {
             finish();
         }
-        // Liste mit Namen aller Provider ausgeben
-        List<String> providers = locationManager.getAllProviders();
-        for (String name : providers) {
-            boolean enabled = locationManager.isProviderEnabled(name);
-            tv.append("Name: " + name +
-                    " --- isProviderEnabled(): " +
-                    enabled + "\n");
-            if (!enabled) {
-                continue;
-            }
-            LocationProvider lp = locationManager.getProvider(name);
-            tv.append("   requiresCell(): " +
-                    lp.requiresCell() + "\n");
-            tv.append("   requiresNetwork(): " +
-                    lp.requiresNetwork() + "\n");
-            tv.append("   requiresSatellite(): " +
-                    lp.requiresSatellite() + "\n\n");
-        }
+
         // Provider mit grober Auflösung
         // und niedrigem Energieverbrauch
         Criteria criteria = new Criteria();
@@ -107,22 +90,22 @@ public class LocationActivitiy extends Activity {
             @Override
             public void onStatusChanged(String provider, int status,
                                         Bundle extras) {
-                tv.append("onStatusChanged()\n");
+//                tv.append("onStatusChanged()\n");
             }
 
             @Override
             public void onProviderEnabled(String provider) {
-                tv.append("onProviderEnabled()\n");
+//                tv.append("onProviderEnabled()\n");
             }
 
             @Override
             public void onProviderDisabled(String provider) {
-                tv.append("onProviderDisabled()\n");
+//                tv.append("onProviderDisabled()\n");
             }
 
             @Override
             public void onLocationChanged(Location location) {
-                tv.append("\nonLocationChanged()\n");
+//                tv.append("\nonLocationChanged()\n");
                 if (location != null) {
                     String s = "Breite: " + location.getLatitude()
                             + "\nLänge: " + location.getLongitude();
@@ -130,14 +113,14 @@ public class LocationActivitiy extends Activity {
                 }
             }
         };
-        // Umwandlung von String- in double-Werte
-        Location locNuernberg = new Location(
-                LocationManager.GPS_PROVIDER);
-        double latitude = Location.convert("49:27");
-        locNuernberg.setLatitude(latitude);
-        double longitude = Location.convert("11:5");
-        locNuernberg.setLongitude(longitude);
-        tv.append("\nlatitude: " + locNuernberg.getLatitude() + "\n");
-        tv.append("longitude: " + locNuernberg.getLongitude() + "\n");
+//        // Umwandlung von String- in double-Werte
+//        Location locNuernberg = new Location(
+//                LocationManager.GPS_PROVIDER);
+//        double latitude = Location.convert("49:27");
+//        locNuernberg.setLatitude(latitude);
+//        double longitude = Location.convert("11:5");
+//        locNuernberg.setLongitude(longitude);
+//        tv.append("\nlatitude: " + locNuernberg.getLatitude() + "\n");
+//        tv.append("longitude: " + locNuernberg.getLongitude() + "\n");
     }
 }

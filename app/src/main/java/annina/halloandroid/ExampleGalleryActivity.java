@@ -13,14 +13,16 @@ public class ExampleGalleryActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
+
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.example_gallery);
 
         ArrayList<ExampleItem> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleItem(R.drawable.ic_android, "Line1", "Line2"));
-        exampleList.add(new ExampleItem(R.drawable.ic_android, "Line3", "Line4"));
+//        exampleList.add(new ExampleItem(CamaraActivity.getOutputMediaFile(1));
+//        exampleList.add(new ExampleItem();
+
         exampleList.add(new ExampleItem(R.drawable.ic_android, "Line5", "Line6"));
 
         mRecyclerView = findViewById(R.id.recyclerView);

@@ -1,11 +1,11 @@
 package annina.halloandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import annina.halloandroid.ui.login.LoginActivity;
 
@@ -19,7 +19,7 @@ public class HomepageActivity extends AppCompatActivity {
 
         Button btn_camera = findViewById(R.id.btn_HomepageCamara);
         btn_camera.setOnClickListener(v -> {
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            Intent intent = new Intent(getApplicationContext(), CamaraActivity.class);
             startActivity(intent);
         });
 
