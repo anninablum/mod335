@@ -23,7 +23,9 @@ public class ExampleGalleryActivity extends AppCompatActivity {
 //        exampleList.add(new ExampleItem(CamaraActivity.getOutputMediaFile(1));
 //        exampleList.add(new ExampleItem();
 
-        exampleList.add(new ExampleItem(R.drawable.ic_android, "Line5", "Line6"));
+        exampleList.add(new ExampleItem(R.drawable.ic_android, "Line 1", "Line 2"));
+        exampleList.add(new ExampleItem(R.drawable.ic_android, "Line 3", "Line 4"));
+        exampleList.add(new ExampleItem(R.drawable.ic_android, "Line 5", "Line 6"));
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);

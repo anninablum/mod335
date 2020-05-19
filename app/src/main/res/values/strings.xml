@@ -33,16 +33,18 @@
     <string name="login_failed">"Login failed"</string>
 
     <!-- Homepage -->
-    <string name="homrpage_title">HOMEPAGE</string>
-    <string name="homepage_camara">Camara</string>
+    <string name="homepage_title">Location Camera and Gallery</string>
+    <string name="homepage_camara">Picture</string>
     <string name="homepage_video">Video</string>
     <string name="homepage_gallery">Gallery</string>
     <string name="homepage_login">Login</string>
-    <string name="line_1">Line 1</string>
-    <string name="line_2">Line 2</string>
+    <string name="line_1">Titel</string>
+    <string name="line_2">Location</string>
+    <string name="line_3">Time</string>
     <string name="todo">TODO</string>
     <string name="open_camera">Open Camera</string>
     <string name="description">Dieses Bild wurde mit XY aufgenommen.</string>
-    <string name="bnt_capture_picture">Take a pichture</string>
+    <string name="bnt_capture_picture">Take a Picture</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/im_background1"
     tools:context=".HomepageActivity">
 
     <Button
@@ -17,10 +18,10 @@
         android:text="@string/homepage_camara"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/homepageTitle"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <Button
         android:id="@+id/btn_HomepageVideo"
@@ -31,7 +32,7 @@
         android:layout_marginEnd="32dp"
         android:text="@string/homepage_video"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_HomepageCamara" />
 
@@ -40,10 +41,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="176dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/homrpage_title"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/homepage_title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#232323"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,7 +65,7 @@
         android:layout_marginEnd="32dp"
         android:text="@string/homepage_gallery"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_HomepageVideo" />
 
@@ -71,7 +80,7 @@
         android:text="@string/homepage_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_HomepageGallery"
         app:layout_constraintVertical_bias="0.0" />
