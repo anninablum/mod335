@@ -46,5 +46,6 @@
     <string name="description">Dieses Bild wurde mit XY aufgenommen.</string>
     <string name="bnt_capture_picture">Take a Picture</string>
     <string name="title_activity_maps">Map</string>
+    <string name="homepage_exit">Exit</string>
 
 </resources>

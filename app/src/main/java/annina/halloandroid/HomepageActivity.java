@@ -2,7 +2,6 @@ package annina.halloandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,11 +22,13 @@ public class HomepageActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button btn_video = findViewById(R.id.btn_HomepageVideo);
-        btn_video.setOnClickListener(v -> {
-            Intent intent = new Intent(MediaStore.INTENT_ACTION_VIDEO_CAMERA);
-            startActivity(intent);
+        Button btn_exit = findViewById(R.id.btn_HomepageExit);
+        btn_exit.setOnClickListener(v -> {
+            finish();
+            System.exit(0);
+
         });
+
 
         Button btn_gallery = findViewById(R.id.btn_HomepageGallery);
         btn_gallery.setOnClickListener(v -> {

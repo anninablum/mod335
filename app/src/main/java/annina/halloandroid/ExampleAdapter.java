@@ -18,12 +18,14 @@ private ArrayList<ExampleItem> mExampleList;
         public ImageView mImageView;
         public TextView mTextView1;
         public TextView mTextView2;
+        public TextView mTextView3;
 
         public ExampleViewHolder(@NonNull View itemView) {
             super(itemView);
             mImageView = itemView.findViewById(R.id.imageView);
             mTextView1 = itemView.findViewById(R.id.textView);
             mTextView2 = itemView.findViewById(R.id.textView2);
+            mTextView3 = itemView.findViewById(R.id.textView3);
         }
     }
 
@@ -44,6 +46,7 @@ private ArrayList<ExampleItem> mExampleList;
         holder.mImageView.setImageResource(currentItem.getmImageResource());
         holder.mTextView1.setText(currentItem.getmText1());
         holder.mTextView2.setText(currentItem.getmText2());
+        holder.mTextView3.setText(currentItem.getmText3());
     }
 
     @Override

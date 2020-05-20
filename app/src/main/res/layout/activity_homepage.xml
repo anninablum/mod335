@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/im_background1"
+    android:background="@drawable/im_noncentert"
     tools:context=".HomepageActivity">
 
     <Button
@@ -24,24 +24,24 @@
         app:layout_constraintVertical_bias="0.48" />
 
     <Button
-        android:id="@+id/btn_HomepageVideo"
+        android:id="@+id/btn_HomepageExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/homepage_video"
+        android:text="@string/homepage_exit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_HomepageCamara" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_HomepageLogin" />
 
     <TextView
         android:id="@+id/homepageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/homepage_title"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_HomepageVideo" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_HomepageCamara" />
 
     <Button
         android:id="@+id/btn_HomepageLogin"
